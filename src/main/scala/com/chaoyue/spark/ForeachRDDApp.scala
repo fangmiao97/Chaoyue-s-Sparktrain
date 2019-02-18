@@ -43,7 +43,7 @@ object ForeachRDDApp {
     */
   def createConnection() = {
     Class.forName("com.mysql.jdbc.Driver")
-    DriverManager.getConnection("jdbc:mysql://101.132.45.245：3306/MessageWikiPro","root","cyf970117")
+    DriverManager.getConnection("jdbc:mysql://101.132.45.245： 3306/MessageWikiPro","root","cyf970117")
   }
 }
 
