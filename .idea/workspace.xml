@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="167d1a11-101c-469e-8422-2912ef93a1f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/KafkaDirectWordCount.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LoggerGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparktrain.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chaoyue/spark/kafka/KafkaClinetApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chaoyue/spark/kafkatrain/KafkaClinetApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chaoyue/spark/kafka/KafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chaoyue/spark/kafkatrain/KafkaConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chaoyue/spark/kafka/KafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chaoyue/spark/kafkatrain/KafkaProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chaoyue/spark/kafka/KafkaProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chaoyue/spark/kafkatrain/KafkaProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/KafkaReceiverWordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/KafkaReceiverWordCount.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/KafkaReceiverWordCount$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/KafkaReceiverWordCount$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/kafka/KafkaClinetApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/kafka/KafkaConsumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/kafka/KafkaProducer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/kafka/KafkaProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sparktrain-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/sparktrain-1.0.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/KafkaDirectWordCount.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="279">
@@ -60,6 +47,24 @@
               <folding>
                 <element signature="e#27#60#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/LoggerGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="93" selection-start-line="5" selection-start-column="93" selection-end-line="5" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -119,6 +124,8 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/KafkaReceiverWordCount.scala" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/KafkaDirectWordCount.scala" />
+        <option value="$PROJECT_DIR$/src/test/java/LoggerGenerator.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/log4j.properties" />
       </list>
     </option>
   </component>
@@ -218,13 +225,6 @@
             </path>
             <path>
               <item name="sparktrain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sparktrain" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sparktrain" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -238,11 +238,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550725103054" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550727478878" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
@@ -264,7 +264,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.KafkaDirectWordCount">
+  <component name="RunManager" selected="Application.LoggerGenerator">
     <configuration name="FlumePullWordCount" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.chaoyue.spark.FlumePullWordCount" />
       <module name="sparktrain" />
@@ -321,6 +321,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoggerGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LoggerGenerator" />
+      <module name="sparktrain" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SqlNetworkWordCount" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.chaoyue.spark.SqlNetworkWordCount" />
       <module name="sparktrain" />
@@ -354,9 +361,11 @@
       <item itemvalue="Application.SqlNetworkWordCount" />
       <item itemvalue="Application.TransformAPP" />
       <item itemvalue="Application.FlumePullWordCount" />
+      <item itemvalue="Application.LoggerGenerator" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LoggerGenerator" />
         <item itemvalue="Application.FlumePullWordCount" />
         <item itemvalue="Application.FlumePushWordCount" />
         <item itemvalue="Application.SqlNetworkWordCount" />
@@ -381,12 +390,12 @@
       <workItem from="1550477383753" duration="1368000" />
       <workItem from="1550481206636" duration="20608000" />
       <workItem from="1550666708264" duration="4428000" />
-      <workItem from="1550680798637" duration="4081000" />
+      <workItem from="1550680798637" duration="5268000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68291000" />
+    <option name="totallyTimeSpent" value="69478000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -399,8 +408,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23828755" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23828755" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -409,7 +419,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.45342466" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.45342466" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -417,7 +427,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49919224" visible="true" weight="0.3479452" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49919224" weight="0.3479452" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50080776" side_tool="true" weight="0.22739726" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.30547947" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32876712" />
@@ -437,12 +447,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/maven_repos/org/apache/kafka/kafka_2.11/0.9.0.0/kafka_2.11-0.9.0.0.jar!/kafka/producer/KeyedMessage.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$USER_HOME$/maven_repos/org/apache/kafka/kafka_2.11/0.9.0.0/kafka_2.11-0.9.0.0.jar!/kafka/producer/ProducerTopicStats.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$USER_HOME$/maven_repos/org/apache/kafka/kafka_2.11/0.9.0.0/kafka_2.11-0.9.0.0.jar!/kafka/producer/Producer.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -788,6 +792,20 @@
           <folding>
             <element signature="e#27#60#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/LoggerGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="93" selection-start-line="5" selection-start-column="93" selection-end-line="5" selection-end-column="93" />
         </state>
       </provider>
     </entry>
