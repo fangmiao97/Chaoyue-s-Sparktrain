@@ -1,4 +1,4 @@
-package com.chaoyue.spark.kafka;
+package com.chaoyue.spark.kafkatrain;
 
 import kafka.javaapi.producer.Producer;
 import kafka.producer.KeyedMessage;

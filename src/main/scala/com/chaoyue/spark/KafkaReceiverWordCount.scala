@@ -19,7 +19,7 @@ object KafkaReceiverWordCount {
     //hadoop000:2181 test hello_ladygaga_topic 1
     val Array(zkQuorum, group, topics, numThreads) = args
 
-    val sparkConf = new SparkConf().setAppName("KafkaReceiverWordCount").setMaster("local[2]")
+    val sparkConf = new SparkConf()//.setAppName("KafkaReceiverWordCount").setMaster("local[2]")
     val ssc = new StreamingContext(sparkConf, Seconds(5))
 
     val topicMap = topics.split(",").map((_, numThreads.toInt)).toMap

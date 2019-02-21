@@ -1,4 +1,4 @@
-package com.chaoyue.spark.kafka;
+package com.chaoyue.spark.kafkatrain;
 
 /**
  * Kafka producer API测试

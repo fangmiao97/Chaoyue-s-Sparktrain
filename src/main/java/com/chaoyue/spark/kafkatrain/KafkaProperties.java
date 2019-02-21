@@ -1,4 +1,4 @@
-package com.chaoyue.spark.kafka;
+package com.chaoyue.spark.kafkatrain;
 
 /**
  * kafka常用配置文件
