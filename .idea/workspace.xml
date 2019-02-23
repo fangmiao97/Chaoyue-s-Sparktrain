@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="167d1a11-101c-469e-8422-2912ef93a1f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/KafkaStreamingApp.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/KafkaStreamingDirectApp.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/domain/ClickLog.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/scala/MyStreamingApp.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/utils/DateUtils.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoggerGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoggerGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/LoggerGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LoggerGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/log4j.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,56 +41,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/LoggerGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/KafkaStreamingApp.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/KafkaStreamingDirectApp.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/scala/MyStreamingApp.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="16" column="20" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="35" />
+            <state relative-caret-position="150">
+              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+              <folding>
+                <element signature="e#41#89#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/domain/ClickLog.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="34" selection-start-column="34" selection-end-column="34" />
+            <state relative-caret-position="176">
+              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/maven_repos/org/apache/spark/spark-streaming-kafka-0-8_2.11/2.2.0/spark-streaming-kafka-0-8_2.11-2.2.0-sources.jar!/org/apache/spark/streaming/kafka/KafkaUtils.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/utils/DateUtils.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="472" column="24" selection-start-line="472" selection-start-column="6" selection-end-line="472" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/maven_repos/org/apache/spark/spark-streaming-kafka-0-8_2.11/2.2.0/spark-streaming-kafka-0-8_2.11-2.2.0-sources.jar!/org/apache/spark/streaming/kafka/KafkaCluster.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="96" selection-start-line="96" selection-end-line="96" />
+            <state relative-caret-position="154">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -104,6 +77,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Scala Object" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -132,13 +107,18 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/SqlNetworkWordCount.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/FlumePushWordCount.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/FlumePullWordCount.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/KafkaReceiverWordCount.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/KafkaDirectWordCount.scala" />
         <option value="$PROJECT_DIR$/src/test/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/LoggerGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/KafkaStreamingApp.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/KafkaStreamingDirectApp.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/KafkaReceiverWordCount.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/MyStreamingApp.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/DateUtils.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/utils/DateUtils.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/domain/ClickLog.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/scala/MyStreamingApp.scala" />
       </list>
     </option>
   </component>
@@ -234,6 +214,35 @@
               <item name="sparktrain" type="b2602c69:ProjectViewProjectNode" />
               <item name="sparktrain" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sparktrain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sparktrain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sparktrain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sparktrain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sparktrain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sparktrain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -254,7 +263,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550752590393" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550898482077" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -280,28 +289,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.KafkaStreamingDirectApp">
-    <configuration name="FlumePullWordCount" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.chaoyue.spark.FlumePullWordCount" />
+  <component name="RunManager" selected="Application.MyStreamingApp">
+    <configuration name="DateUtils" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.chaoyue.spark.project.utils.DateUtils" />
       <module name="sparktrain" />
-      <option name="PROGRAM_PARAMETERS" value="hadoop000 41414" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.chaoyue.spark.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FlumePushWordCount" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.chaoyue.spark.FlumePushWordCount" />
-      <module name="sparktrain" />
-      <option name="PROGRAM_PARAMETERS" value="hadoop000 41414" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.chaoyue.spark.*" />
+          <option name="PATTERN" value="com.chaoyue.spark.project.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -315,7 +309,7 @@
       <option name="PROGRAM_PARAMETERS" value="hadoop000:9092 hello_ladygaga_topic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.chaoyue.spark.*" />
+          <option name="PATTERN" value="com.chaoyue.spark.project.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -329,7 +323,7 @@
       <option name="PROGRAM_PARAMETERS" value="hadoop000:2181 test hello_ladygaga_topic 1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.chaoyue.spark.*" />
+          <option name="PATTERN" value="com.chaoyue.spark.project.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -343,7 +337,7 @@
       <option name="PROGRAM_PARAMETERS" value="hadoop000:9092 streamingtopic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.chaoyue.spark.*" />
+          <option name="PATTERN" value="com.chaoyue.spark.project.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -357,7 +351,7 @@
       <option name="PROGRAM_PARAMETERS" value="hadoop000:9092 streamingtopic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.chaoyue.spark.*" />
+          <option name="PATTERN" value="com.chaoyue.spark.project.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -372,22 +366,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyStreamingApp" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.chaoyue.spark.project.scala.MyStreamingApp" />
+      <module name="sparktrain" />
+      <option name="PROGRAM_PARAMETERS" value="hadoop000:2181 test streamingtopic 1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chaoyue.spark.project.scala.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.KafkaDirectWordCount" />
       <item itemvalue="Application.KafkaReceiverWordCount" />
-      <item itemvalue="Application.FlumePushWordCount" />
-      <item itemvalue="Application.FlumePullWordCount" />
       <item itemvalue="Application.LoggerGenerator" />
       <item itemvalue="Application.KafkaStreamingApp" />
       <item itemvalue="Application.KafkaStreamingDirectApp" />
+      <item itemvalue="Application.MyStreamingApp" />
+      <item itemvalue="Application.DateUtils" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyStreamingApp" />
+        <item itemvalue="Application.DateUtils" />
         <item itemvalue="Application.KafkaStreamingDirectApp" />
         <item itemvalue="Application.LoggerGenerator" />
         <item itemvalue="Application.KafkaStreamingApp" />
-        <item itemvalue="Application.FlumePullWordCount" />
-        <item itemvalue="Application.FlumePushWordCount" />
       </list>
     </recent_temporary>
   </component>
@@ -408,12 +416,12 @@
       <workItem from="1550477383753" duration="1368000" />
       <workItem from="1550481206636" duration="20608000" />
       <workItem from="1550666708264" duration="4428000" />
-      <workItem from="1550680798637" duration="7597000" />
+      <workItem from="1550680798637" duration="11542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71807000" />
+    <option name="totallyTimeSpent" value="75752000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -426,7 +434,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23828755" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -437,7 +444,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.569863" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.63835615" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -465,48 +472,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/maven_repos/org/apache/kafka/kafka_2.11/0.9.0.0/kafka_2.11-0.9.0.0.jar!/kafka/javaapi/producer/Producer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/maven_repos/org/apache/kafka/kafka_2.11/0.9.0.0/kafka_2.11-0.9.0.0-sources.jar!/kafka/consumer/ConsumerConnector.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="118" column="6" selection-start-line="118" selection-start-column="6" selection-end-line="118" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/maven_repos/org/apache/kafka/kafka_2.11/0.9.0.0/kafka_2.11-0.9.0.0-sources.jar!/kafka/consumer/ConsumerConfig.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="99" column="76" selection-start-line="99" selection-start-column="76" selection-end-line="99" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1857">
-          <caret line="128" column="17" selection-start-line="128" selection-start-column="17" selection-end-line="128" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/maven_repos/org/apache/kafka/kafka_2.11/0.9.0.0/kafka_2.11-0.9.0.0-sources.jar!/kafka/message/MessageAndMetadata.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/maven_repos/org/apache/kafka/kafka_2.11/0.9.0.0/kafka_2.11-0.9.0.0-sources.jar!/kafka/javaapi/consumer/ConsumerConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/maven_repos/org/apache/kafka/kafka_2.11/0.9.0.0/kafka_2.11-0.9.0.0-sources.jar!/kafka/consumer/ConsumerIterator.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
@@ -756,23 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/KafkaReceiverWordCount.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="27" column="38" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="42" />
-          <folding>
-            <element signature="e#27#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/maven_repos/org/apache/spark/spark-streaming-kafka-0-8_2.11/2.2.0/spark-streaming-kafka-0-8_2.11-2.2.0-sources.jar!/org/apache/spark/streaming/kafka/KafkaUtils.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="472" column="24" selection-start-line="472" selection-start-column="6" selection-end-line="472" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/maven_repos/org/apache/kafka/kafka_2.11/0.9.0.0/kafka_2.11-0.9.0.0-sources.jar!/kafka/serializer/Decoder.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
@@ -787,13 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
           <caret line="96" selection-start-line="96" selection-end-line="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" selection-start-column="34" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -832,6 +773,85 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
           <caret line="16" column="20" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/MyStreamingApp.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="e#35#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="883" column="16" selection-start-line="883" selection-start-column="16" selection-end-line="883" selection-end-column="16" />
+          <folding>
+            <element signature="e#37718#37719#0" expanded="true" />
+            <element signature="e#37754#37755#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/DateUtils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+          <folding>
+            <element signature="e#27#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/KafkaReceiverWordCount.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="22" />
+          <folding>
+            <element signature="e#27#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/maven_repos/org/apache/spark/spark-streaming-kafka-0-8_2.11/2.2.0/spark-streaming-kafka-0-8_2.11-2.2.0-sources.jar!/org/apache/spark/streaming/kafka/KafkaUtils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="472" column="24" selection-start-line="472" selection-start-column="6" selection-end-line="472" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/utils/DateUtils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/domain/ClickLog.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/scala/MyStreamingApp.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding>
+            <element signature="e#41#89#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
