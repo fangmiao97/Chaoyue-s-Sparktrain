@@ -1,10 +1,13 @@
 package com.chaoyue.spark.project.scala
 
-import com.chaoyue.spark.project.domain.ClickLog
+import com.chaoyue.spark.project.dao.CourseClickCountDAO
+import com.chaoyue.spark.project.domain.{ClickLog, CourseClickCount}
 import com.chaoyue.spark.project.utils.DateUtils
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming.kafka.KafkaUtils
 import org.apache.spark.streaming.{Seconds, StreamingContext}
+
+import scala.collection.mutable.ListBuffer
 
 /**
   * 全链路打通
@@ -45,7 +48,22 @@ object MyStreamingApp {
       ClickLog(infos(0), DateUtils.parseToMinute(infos(1)), courseID, infos(3).toInt, infos(4))
     }).filter( clicklog => clicklog.courseId != 0)
 
-    cleanData.print()
+    //cleanData.print()//ClickLog(87.30.187.55,20190219090601,145,404,-)
+
+    //三、统计到今天到现在为止的课程访问量
+    cleanData.map(x => {
+      (x.time.substring(0,8)+"_"+x.courseId, 1)
+    }).reduceByKey(_+_).foreachRDD(rdd => {
+      rdd.foreachPartition(partitionRecords => {
+        val list = new ListBuffer[CourseClickCount]
+
+        partitionRecords.foreach(pair => {
+          list.append(CourseClickCount(pair._1, pair._2))
+        })
+
+        CourseClickCountDAO.save(list)
+      })
+    })
 
     ssc.start()
     ssc.awaitTermination()
