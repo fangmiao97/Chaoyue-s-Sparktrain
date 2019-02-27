@@ -1,7 +1,7 @@
 package com.chaoyue.spark.project.scala
 
-import com.chaoyue.spark.project.dao.CourseClickCountDAO
-import com.chaoyue.spark.project.domain.{ClickLog, CourseClickCount}
+import com.chaoyue.spark.project.dao.{CourseClickCountDAO, CourseSearchClickCountDAO}
+import com.chaoyue.spark.project.domain.{ClickLog, CourseClickCount, CourseSearchClickCount}
 import com.chaoyue.spark.project.utils.DateUtils
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming.kafka.KafkaUtils
@@ -22,7 +22,7 @@ object MyStreamingApp {
     }
     val Array(zkQuorum, group, topics, numThreads) = args
 
-    val sparkConf = new SparkConf().setAppName("MyStreamingApp").setMaster("local[2]")
+    val sparkConf = new SparkConf().setAppName("MyStreamingApp")//.setMaster("local[5]")
     val ssc = new StreamingContext(sparkConf, Seconds(60))
 
     val topicMap = topics.split(",").map((_, numThreads.toInt)).toMap
@@ -62,6 +62,30 @@ object MyStreamingApp {
         })
 
         CourseClickCountDAO.save(list)
+      })
+    })
+
+    //四、统计从搜索引擎过来的从今天开始到现在的课程的访问量
+    //x: ClickLog(72.124.63.29,20190219090601,112,404,http://cn.bing.com/search?q=Storm实战)
+    cleanData.map(x => {
+      val referer = x.referer.replaceAll("//", "/")
+      val splits = referer.split("/")
+      var host = "" //有的clicklog是没有referer的，就是 -
+      if(splits.length>2){
+        host = splits(1)
+      }
+
+      (host, x.courseId, x.time)
+    }).filter(_._1 != "").map(x => {
+      (x._3.substring(0,8)+"_"+x._1+"_"+x._2, 1)
+    }).reduceByKey(_+_).foreachRDD( rdd => {
+      rdd.foreachPartition(partitonRecords => {
+        val list = new ListBuffer[CourseSearchClickCount]
+
+        partitonRecords.foreach(pair => {
+          list.append(CourseSearchClickCount(pair._1, pair._2))
+        })
+        CourseSearchClickCountDAO.save(list)
       })
     })
 

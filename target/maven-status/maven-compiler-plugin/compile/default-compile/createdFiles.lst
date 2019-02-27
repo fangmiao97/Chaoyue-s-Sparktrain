@@ -1,0 +1,5 @@
+com/chaoyue/spark/kafkatrain/KafkaConsumer.class
+com/chaoyue/spark/kafkatrain/KafkaProducer.class
+com/chaoyue/spark/kafkatrain/KafkaClinetApp.class
+com/chaoyue/spark/kafkatrain/KafkaProperties.class
+com/chaoyue/spark/project/utils/HBaseUtils.class
