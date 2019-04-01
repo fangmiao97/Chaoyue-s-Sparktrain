@@ -22,6 +22,6 @@ object DateUtils {
   }
 
   def main(args: Array[String]): Unit = {
-    println(parseToMinute("2018-9-6 13:58:01"))
+    println(parseToMinute("2019-04-01 11:52:04,488"))
   }
 }

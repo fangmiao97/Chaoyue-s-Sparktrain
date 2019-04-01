@@ -1,8 +1,13 @@
 package com.chaoyue.spark
 
+import com.chaoyue.spark.project.dao.SongPlayDailyCountDAO
+import com.chaoyue.spark.project.domain.{SongPlayDailyCount, SongPlayLog}
+import com.chaoyue.spark.project.utils.DateUtils
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming.kafka.KafkaUtils
 import org.apache.spark.streaming.{Seconds, StreamingContext}
+
+import scala.collection.mutable.ListBuffer
 
 /**
   * spark streaming对接kafka
@@ -24,10 +29,34 @@ object KafkaStreamingApp {
 
     val topicMap = topics.split(",").map((_, numThreads.toInt)).toMap
 
-    //TODO... 对接kafka
+    //对接kafka
     val messages = KafkaUtils.createStream(ssc, zkQuorum, group, topicMap)
-
     messages.map(_._2).count().print()
+
+    //清洗数据得到SongPlayLog
+    val logs = messages.map(_._2)
+    val songPlayLog = logs.map(line => {
+      val infos = line.split(" ")
+      val time = DateUtils.parseToMinute(infos(0)+" "+infos(1))
+      val songID = infos.last.split(":")(1).dropRight(1)
+
+      SongPlayLog(time, songID) //SongPlayLog(20190401125947,15)
+    })
+
+    //由SongPlayLog统计今日歌曲播放情况
+    songPlayLog.map(x => {
+      (x.time.substring(0,8) + "_" + x.songID, 1)
+    }).reduceByKey(_+_).foreachRDD(rdd => {
+      rdd.foreachPartition(partitionRecords => {
+        val list = new ListBuffer[SongPlayDailyCount]
+
+        partitionRecords.foreach(pair => {
+          list.append(SongPlayDailyCount(pair._1, pair._2))
+        })
+
+        SongPlayDailyCountDAO.save(list)
+      })
+    })
 
     ssc.start()
     ssc.awaitTermination()

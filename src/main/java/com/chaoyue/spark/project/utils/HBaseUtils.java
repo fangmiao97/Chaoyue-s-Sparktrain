@@ -77,12 +77,16 @@ public class HBaseUtils {
     }
 
     public static void main(String[] args) {
-        String tableName = "course_clickcount";
-        String rowkey = "20190223_1";
-        String cf = "info";
-        String column = "click_count";
-        String value = "2";
 
-        HBaseUtils.getInstance().put(tableName, rowkey, cf, column, value);
+//        String tableName = "course_clickcount";
+//        String rowkey = "20190223_1";
+//        String cf = "info";
+//        String column = "click_count";
+//        String value = "33";
+//
+//        HBaseUtils.getInstance().put(tableName, rowkey, cf, column, value);
+
+        HTable table = HBaseUtils.getInstance().getTable("course_clickcount");
+        System.out.println(table.getName().getNameAsString());
     }
 }
