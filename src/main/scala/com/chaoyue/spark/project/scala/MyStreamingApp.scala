@@ -1,8 +1,11 @@
 package com.chaoyue.spark.project.scala
 
-import com.chaoyue.spark.project.dao.{CourseClickCountDAO, CourseSearchClickCountDAO}
-import com.chaoyue.spark.project.domain.{ClickLog, CourseClickCount, CourseSearchClickCount}
+import java.util.Date
+
+import com.chaoyue.spark.project.dao.{ClickCountTrendDAO, CourseClickCountDAO, CourseSearchClickCountDAO}
+import com.chaoyue.spark.project.domain.{ClickCountTrend, ClickLog, CourseClickCount, CourseSearchClickCount}
 import com.chaoyue.spark.project.utils.DateUtils
+import org.apache.commons.lang3.time.FastDateFormat
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming.kafka.KafkaUtils
 import org.apache.spark.streaming.{Seconds, StreamingContext}
@@ -62,6 +65,24 @@ object MyStreamingApp {
         })
 
         CourseClickCountDAO.save(list)
+      })
+    })
+
+    //使用Window操作计算窗口大小为10分钟的访问情况，不分类目统计
+    cleanData.map(x => {
+      (x.time.substring(0,8), 1)
+    }).reduceByKeyAndWindow((x: Int, y: Int) => x + y,
+      Seconds(600), Seconds(600)).foreachRDD(rdd => {
+      rdd.foreachPartition(partitionRecords => {
+        val list = new ListBuffer[ClickCountTrend]
+        val time = FastDateFormat.getInstance("HHmm").format(new Date())
+
+        partitionRecords.foreach(pair => {
+          list.append(ClickCountTrend(
+            pair._1+time,
+            pair._2))
+        })
+        ClickCountTrendDAO.save(list)
       })
     })
 
