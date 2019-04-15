@@ -30,7 +30,6 @@ object MyStreamingApp {
 
     val topicMap = topics.split(",").map((_, numThreads.toInt)).toMap
 
-    //TODO...
     val messages = KafkaUtils.createStream(ssc, zkQuorum, group, topicMap)
 
 //    messages.map(_._2).count().print()
@@ -68,11 +67,11 @@ object MyStreamingApp {
       })
     })
 
-    //使用Window操作计算窗口大小为10分钟的访问情况，不分类目统计
+    //使用Window操作计算窗口大小为30分钟的访问情况，不分类目统计
     cleanData.map(x => {
       (x.time.substring(0,8), 1)
     }).reduceByKeyAndWindow((x: Int, y: Int) => x + y,
-      Seconds(600), Seconds(600)).foreachRDD(rdd => {
+      Seconds(1800), Seconds(1800)).foreachRDD(rdd => {
       rdd.foreachPartition(partitionRecords => {
         val list = new ListBuffer[ClickCountTrend]
         val time = FastDateFormat.getInstance("HHmm").format(new Date())

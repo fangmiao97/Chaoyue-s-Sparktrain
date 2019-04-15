@@ -1,8 +1,11 @@
 package com.chaoyue.spark
 
-import com.chaoyue.spark.project.dao.SongPlayDailyCountDAO
-import com.chaoyue.spark.project.domain.{SongPlayDailyCount, SongPlayLog}
+import java.util.Date
+
+import com.chaoyue.spark.project.dao.{RecentlyPlaySongDAO, SongPlayDailyCountDAO}
+import com.chaoyue.spark.project.domain.{RecentlySongPlayCount, SongPlayDailyCount, SongPlayLog}
 import com.chaoyue.spark.project.utils.DateUtils
+import org.apache.commons.lang3.time.FastDateFormat
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming.kafka.KafkaUtils
 import org.apache.spark.streaming.{Seconds, StreamingContext}
@@ -55,6 +58,22 @@ object KafkaStreamingApp {
         })
 
         SongPlayDailyCountDAO.save(list)
+      })
+    })
+
+    //统计最近一个小时歌曲播放情况，每十分钟更新一次，数据库中只保留最近一个小时的数据
+    songPlayLog.map(x => {
+      (x.time.substring(0,8) + "_" + x.songID, 1)
+    }).reduceByKeyAndWindow((x: Int, y: Int) => x + y,
+      Seconds(3600), Seconds(600)).foreachRDD(rdd => {
+      rdd.foreachPartition(partitionRecords => {
+        val list = new ListBuffer[RecentlySongPlayCount]
+
+        partitionRecords.foreach(pair => {
+          list.append(RecentlySongPlayCount(pair._1,
+            pair._2))
+        })
+        RecentlyPlaySongDAO.save(list)
       })
     })
 
