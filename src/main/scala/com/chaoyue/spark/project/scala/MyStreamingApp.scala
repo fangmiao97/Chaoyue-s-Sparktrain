@@ -67,9 +67,9 @@ object MyStreamingApp {
       })
     })
 
-    //使用Window操作计算窗口大小为30分钟的访问情况，不分类目统计
+    //使用Window操作计算窗口大小为30分钟的访问情况，分类目统计
     cleanData.map(x => {
-      (x.time.substring(0,8), 1)
+      (x.time.substring(0,8)+"_"+x.courseId, 1)
     }).reduceByKeyAndWindow((x: Int, y: Int) => x + y,
       Seconds(1800), Seconds(1800)).foreachRDD(rdd => {
       rdd.foreachPartition(partitionRecords => {
@@ -78,7 +78,7 @@ object MyStreamingApp {
 
         partitionRecords.foreach(pair => {
           list.append(ClickCountTrend(
-            pair._1+time,
+            pair._1.substring(0,8)+time+pair._1.substring(8),//201904170959_121
             pair._2))
         })
         ClickCountTrendDAO.save(list)

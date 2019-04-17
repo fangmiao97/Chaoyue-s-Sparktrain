@@ -23,7 +23,7 @@ object ClickCountTrendDAO {
     val table = HBaseUtils.getInstance().getTable(tablename)
 
     for(ele <- list) {
-      table.incrementColumnValue(Bytes.toBytes(ele.day_course_time),
+      table.incrementColumnValue(Bytes.toBytes(ele.day_time_course),
         Bytes.toBytes(cf),
         Bytes.toBytes(qualifer),
         ele.click_count)

@@ -2,42 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="167d1a11-101c-469e-8422-2912ef93a1f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/dao/RecentlyPlaySongDAO.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/domain/RecentlySongPlayCount.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/KafkaStreamingApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/KafkaStreamingApp.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/dao/ClickCountTrendDAO.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/dao/ClickCountTrendDAO.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/domain/ClickCountTrend.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/domain/ClickCountTrend.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/scala/MyStreamingApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/scala/MyStreamingApp.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/KafkaStreamingApp$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/KafkaStreamingApp$$anonfun$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/KafkaStreamingApp$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/KafkaStreamingApp$$anonfun$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/KafkaStreamingApp$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/KafkaStreamingApp$$anonfun$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/KafkaStreamingApp$$anonfun$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/KafkaStreamingApp$$anonfun$main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/KafkaStreamingApp$$anonfun$main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/KafkaStreamingApp$$anonfun$main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/KafkaStreamingApp$$anonfun$main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/KafkaStreamingApp$$anonfun$main$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/KafkaStreamingApp$$anonfun$main$4$$anonfun$apply$1$$anonfun$apply$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/KafkaStreamingApp$$anonfun$main$4$$anonfun$apply$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/KafkaStreamingApp$$anonfun$main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/KafkaStreamingApp$$anonfun$main$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/KafkaStreamingApp$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/KafkaStreamingApp$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$11$$anonfun$apply$5$$anonfun$apply$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$11$$anonfun$apply$5$$anonfun$apply$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$11$$anonfun$apply$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$11$$anonfun$apply$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$5$$anonfun$apply$1$$anonfun$apply$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$5$$anonfun$apply$1$$anonfun$apply$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$5$$anonfun$apply$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$5$$anonfun$apply$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$7$$anonfun$apply$3$$anonfun$apply$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$7$$anonfun$apply$3$$anonfun$apply$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$7$$anonfun$apply$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$7$$anonfun$apply$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$$anonfun$main$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chaoyue/spark/project/scala/MyStreamingApp$.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -66,22 +33,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/KafkaStreamingApp.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
+            <state relative-caret-position="340">
               <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
               <folding>
                 <element signature="e#27#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/dao/RecentlyPlaySongDAO.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-              <folding>
-                <element signature="e#39#100#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,11 +75,32 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/scala/MyStreamingApp.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="74" column="48" lean-forward="true" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
+            <state relative-caret-position="50">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
               <folding>
                 <element signature="e#41#62#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/dao/ClickCountTrendDAO.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="25" column="66" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
+              <folding>
+                <element signature="e#39#60#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/domain/ClickCountTrend.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -217,12 +193,12 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/domain/SongPlayDailyCount.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/dao/SongPlayDailyCountDAO.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/utils/DateUtils.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/domain/ClickCountTrend.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/dao/ClickCountTrendDAO.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/KafkaStreamingApp.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/domain/RecentlySongPlayCount.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/scala/MyStreamingApp.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/dao/RecentlyPlaySongDAO.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/domain/ClickCountTrend.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/scala/MyStreamingApp.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/dao/ClickCountTrendDAO.scala" />
       </list>
     </option>
   </component>
@@ -417,7 +393,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555331487542" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555505409539" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -590,12 +566,12 @@
       <workItem from="1554260469745" duration="4242000" />
       <workItem from="1554870375700" duration="11402000" />
       <workItem from="1554898596719" duration="22783000" />
-      <workItem from="1555317247791" duration="3291000" />
+      <workItem from="1555317247791" duration="12058000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184416000" />
+    <option name="totallyTimeSpent" value="193183000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -608,7 +584,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25686592" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -619,7 +594,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.7410959" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.7082192" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -907,13 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/domain/ClickCountTrend.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/utils/DateUtils.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -935,16 +903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/dao/ClickCountTrendDAO.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding>
-            <element signature="e#39#60#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1019,7 +977,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/KafkaStreamingApp.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="340">
           <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
           <folding>
             <element signature="e#27#48#0" expanded="true" />
@@ -1027,10 +985,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/dao/ClickCountTrendDAO.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="66" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
+          <folding>
+            <element signature="e#39#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/domain/ClickCountTrend.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/scala/MyStreamingApp.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="74" column="48" lean-forward="true" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
+        <state relative-caret-position="50">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
           <folding>
             <element signature="e#41#62#0" expanded="true" />
           </folding>

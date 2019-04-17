@@ -5,4 +5,4 @@ package com.chaoyue.spark.project.domain
   * @param day_time_course rowkey
   * @param click_count
   */
-case class ClickCountTrend(day_course_time: String, click_count: Long)
+case class ClickCountTrend(day_time_course: String, click_count: Long)
