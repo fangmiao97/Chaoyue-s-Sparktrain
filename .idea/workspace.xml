@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="167d1a11-101c-469e-8422-2912ef93a1f2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/dao/ClickCountTrendDAO.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/dao/ClickCountTrendDAO.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/domain/ClickCountTrend.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/domain/ClickCountTrend.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/scala/MyStreamingApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/scala/MyStreamingApp.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -75,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/scala/MyStreamingApp.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="135">
+              <caret line="71" column="56" selection-start-line="71" selection-start-column="56" selection-end-line="71" selection-end-column="56" />
               <folding>
                 <element signature="e#41#62#0" expanded="true" />
               </folding>
@@ -197,8 +195,8 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/domain/RecentlySongPlayCount.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/dao/RecentlyPlaySongDAO.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/domain/ClickCountTrend.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/scala/MyStreamingApp.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/dao/ClickCountTrendDAO.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/scala/MyStreamingApp.scala" />
       </list>
     </option>
   </component>
@@ -393,7 +391,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555505409539" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555726666988" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -528,8 +526,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MyStreamingApp" />
         <item itemvalue="Application.KafkaStreamingApp" />
+        <item itemvalue="Application.MyStreamingApp" />
         <item itemvalue="Application.ClickCountTrendDAO" />
         <item itemvalue="Application.DateUtils" />
         <item itemvalue="Application.CourseClickCountDAO" />
@@ -566,12 +564,12 @@
       <workItem from="1554260469745" duration="4242000" />
       <workItem from="1554870375700" duration="11402000" />
       <workItem from="1554898596719" duration="22783000" />
-      <workItem from="1555317247791" duration="12058000" />
+      <workItem from="1555317247791" duration="24657000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193183000" />
+    <option name="totallyTimeSpent" value="205782000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1004,8 +1002,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/chaoyue/spark/project/scala/MyStreamingApp.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        <state relative-caret-position="135">
+          <caret line="71" column="56" selection-start-line="71" selection-start-column="56" selection-end-line="71" selection-end-column="56" />
           <folding>
             <element signature="e#41#62#0" expanded="true" />
           </folding>
