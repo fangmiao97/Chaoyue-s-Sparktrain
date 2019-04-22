@@ -24,7 +24,7 @@ object KafkaStreamingApp {
       System.exit(1)
     }
 
-    //hadoop000:2181 test hello_ladygaga_topic 1
+    //hadoop000:2181 test minions_songplay 1
     val Array(zkQuorum, group, topics, numThreads) = args
 
     val sparkConf = new SparkConf().setAppName("KafkaStreamingApp").setMaster("local[2]")
@@ -36,13 +36,12 @@ object KafkaStreamingApp {
     val messages = KafkaUtils.createStream(ssc, zkQuorum, group, topicMap)
     messages.map(_._2).count().print()
 
-    //清洗数据得到SongPlayLog
+    //清洗数据得到SongLog
     val logs = messages.map(_._2)
     val songPlayLog = logs.map(line => {
       val infos = line.split(" ")
       val time = DateUtils.parseToMinute(infos(0)+" "+infos(1))
       val songID = infos.last.split(":")(1).dropRight(1)
-
       SongPlayLog(time, songID) //SongPlayLog(20190401125947,15)
     })
 
