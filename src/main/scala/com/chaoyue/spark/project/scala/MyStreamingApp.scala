@@ -42,7 +42,7 @@ object MyStreamingApp {
       // /class/128.html
       var courseID = 0
 
-      if (url.startsWith("/class")){//class开头的把课程编号拿出来
+      if (url.startsWith("/music")){//music开头的把编号拿出来
         val courseIdHTML = url.split("/")(2)
         courseID = courseIdHTML.substring(0, courseIdHTML.lastIndexOf(".")).toInt
       }
