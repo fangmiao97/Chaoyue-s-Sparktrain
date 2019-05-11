@@ -48,7 +48,7 @@ object MyStreamingApp {
       }
 
       ClickLog(infos(0), DateUtils.parseToMinute(infos(1)), courseID, infos(3).toInt, infos(4))
-    }).filter( clicklog => clicklog.courseId != 0)
+    }).filter( clicklog => clicklog.courseId != 0 && clicklog.statusCode == 200)
 
     //cleanData.print()//ClickLog(87.30.187.55,20190219090601,145,404,-)
 
