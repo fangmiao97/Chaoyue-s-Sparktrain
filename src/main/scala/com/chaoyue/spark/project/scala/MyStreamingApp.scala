@@ -25,7 +25,8 @@ object MyStreamingApp {
     }
     val Array(zkQuorum, group, topics, numThreads) = args
 
-    val sparkConf = new SparkConf().setAppName("MyStreamingApp").setMaster("local[5]")
+    //hadoop000:2181 test streamingtopic 1
+    val sparkConf = new SparkConf().setAppName("MyStreamingApp")//.setMaster("local[5]")
     val ssc = new StreamingContext(sparkConf, Seconds(60))
 
     val topicMap = topics.split(",").map((_, numThreads.toInt)).toMap
