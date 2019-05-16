@@ -27,6 +27,7 @@ object KafkaStreamingApp {
     //hadoop000:2181 test minions_songplay 1
     val Array(zkQuorum, group, topics, numThreads) = args
 
+    //hadoop000:2181 test minions_songplay
     val sparkConf = new SparkConf().setAppName("KafkaStreamingApp").setMaster("local[2]")
     val ssc = new StreamingContext(sparkConf, Seconds(5))
 
